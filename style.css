@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad&family=Pacifico&display=swap");
+
+/* my fonts */
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #e2edff;
+}
+
+.jumbotron h1 {
+  font-family: "Afacad", sans-serif;
+}
+
+#projects {
+  background-color: #e2edff;
+}
+
+section {
+  padding-top: 5rem;
+}
