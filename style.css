@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Afacad&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 
 /* my fonts */
 .jumbotron {
@@ -7,7 +8,7 @@
 }
 
 .jumbotron h1 {
-  font-family: "Afacad", sans-serif;
+  font-family: "Kaushan Script", cursive;
 }
 
 #projects {
@@ -16,6 +17,10 @@
 
 section {
   padding-top: 5rem;
+}
+
+section h2 {
+  font-family: "Roboto Slab", serif;
 }
 
 .gallery-img {

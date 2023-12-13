@@ -16,6 +16,10 @@
 
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
   </head>
   <body id="Home">
     <!-- Navbar -->
@@ -49,7 +53,7 @@
     <section class="jumbotron text-center">
       <img src="img/cool.jpg" alt="Nells Mends" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Nelson Mendrofa</h1>
-      <p class="lead">Programmer | Web Developer | Designer</p>
+      <h2>I'm <span class="auto-type" style="color: rgb(7, 105, 170)"></span></h2>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -98,41 +102,41 @@
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="zoom-in-up" data-aos-duration="500">
-              <img src="img/projects/computering.jpg" class="card-img-top" alt="Project" />
+              <img src="img/projects/picture-1.jpeg" class="card-img-top" alt="Project" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">The first portfolio website project using pure HTML and CSS and Javascript</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="300">
-              <img src="img/projects/keyboard.jpg" class="card-img-top" alt="Project" />
+              <img src="img/projects/picture-2.jpeg" class="card-img-top" alt="Project" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">My website with an introductory theme is still in the development stage</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="600">
-              <img src="img/projects/computering.jpg" class="card-img-top" alt="Project" />
+              <img src="img/projects/picture-3.jpg" class="card-img-top" alt="Project" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Algorithms and Code are one of the main keys in learning programming languages</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="zoom-in-up" data-aos-duration="500">
-              <img src="img/projects/it.jpg" class="card-img-top" alt="Project" />
+              <img src="img/projects/picture-4.jpeg" class="card-img-top" alt="Project" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Create a simple login form to access a particular service with security</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="300">
-              <img src="img/projects/it.jpg" class="card-img-top" alt="Project" />
+              <img src="img/projects/picture-5.jpg" class="card-img-top" alt="Project" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Simple photos about daily life in learning and develope programming</p>
               </div>
             </div>
           </div>
@@ -261,6 +265,15 @@
       <p>Created with <i class="bi bi-suit-heart-fill text-danger"></i> by <a href="https://www.instagram.com/nelsonn_knz/" class="text-white fw-bold">Nelson Mendrofa</a></p>
     </footer>
     <!-- Akhir Footer -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Programmer", " Web Developer", "Designer", ""],
+        typeSpeed: 120,
+        backSpeed: 150,
+        loop: true,
+      });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
@@ -278,8 +291,11 @@
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/TextPlugin.min.js"></script>
     <script>
-      gsap.from(".jumbotron img", { duration: 1, y: -100, opacity: 0 });
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", { duration: 2, delay: 1, text: "Programmer | Web Developer | Designer" });
+      gsap.from(".jumbotron img", { duration: 1, y: -100, opacity: 0, ease: "power1" });
     </script>
 
     <!-- form -->
