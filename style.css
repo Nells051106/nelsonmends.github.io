@@ -31,13 +31,3 @@ section h2 {
   padding: 0;
 }
 
-/* Responsive Breakpoint */
-
-/* ukuran tablet */
-@media screen and (max-width: 768px) {
-}
-
-/* Ukuran Mobile */
-
-@media screen and (max-width: 576px) {
-}
