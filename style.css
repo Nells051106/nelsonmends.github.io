@@ -15,10 +15,6 @@
   background-color: #e2edff;
 }
 
-section {
-  padding-top: 5rem;
-}
-
 section h2 {
   font-family: "Roboto Slab", serif;
 }
@@ -30,4 +26,3 @@ section h2 {
 #gallery .row > * {
   padding: 0;
 }
-
